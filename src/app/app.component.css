@@ -1,0 +1,17 @@
+.example-form {
+    width: 100%;
+  }
+  
+.example-full-width {
+    width: 100%;
+}
+
+.card{
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+.button{
+    width: 100%;
+}
