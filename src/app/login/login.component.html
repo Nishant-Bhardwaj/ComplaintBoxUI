@@ -1,0 +1,32 @@
+<mat-card class="card">
+    <mat-card-title>Welcome to the Portal</mat-card-title>
+    <mat-card-subtitle>
+        Please log-in to file a complaint
+    </mat-card-subtitle>
+    <mat-card-content>
+        <form class="example-form" (ngSubmit)="login()">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>username</mat-label>
+              <input 
+                type="text" [(ngModel)]="username" name="username"
+                matInput placeholder="Enter your username" required>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>password</mat-label>
+              <input 
+                type="password" [(ngModel)]="password" name="password" 
+                matInput placeholder="Enter your password" required>
+            </mat-form-field>
+
+            <mat-card-subtitle>
+              Don't have account ? 
+              <a routerLink="../signup"> create account </a>
+            </mat-card-subtitle>
+
+            <button type="submit" mat-raised-button color="primary" matTooltip="click to login" class="button">Submit</button>
+          </form>
+    </mat-card-content>
+</mat-card>
+
+<router-outlet></router-outlet>

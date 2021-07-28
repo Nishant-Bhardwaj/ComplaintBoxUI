@@ -1,1 +1,49 @@
-<p>user-management works!</p>
+<mat-card class="card">
+    <mat-card-title>Sign-Up for Complaint Box</mat-card-title>
+    <mat-card-subtitle>Please fill details and click on submit</mat-card-subtitle>
+
+    <mat-card-content>
+
+        <form class="example-form" (ngSubmit)="signUp()">
+        
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>username</mat-label>
+                <input 
+                  type="text" [(ngModel)]="username" name="username"
+                  matInput placeholder="Enter your username" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>email address</mat-label>
+                <input 
+                  type="text" [(ngModel)]="email" name="email"
+                  matInput placeholder="Enter your email address" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>mobile number</mat-label>
+                <input 
+                  type="text" [(ngModel)]="mobile" name="mobile"
+                  matInput placeholder="Enter your mobile number" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>department</mat-label>
+                <input 
+                  type="text" [(ngModel)]="department" name="department"
+                  matInput placeholder="Enter your department's name" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>password</mat-label>
+                <input 
+                  type="password" [(ngModel)]="password" name="password"
+                  matInput placeholder="Create a strong password" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>confirm password</mat-label>
+                <input 
+                  type="password" [(ngModel)]="confirmPassword" name="confirmPassword"
+                  matInput placeholder="confirm your password" required>
+            </mat-form-field>
+            <button type="reset" mat-raised-button color="warn" class="button">Reset</button>
+            <button type="submit" mat-raised-button color="primary" class="subtn">Submit</button>
+        </form>
+    </mat-card-content>
+</mat-card>
